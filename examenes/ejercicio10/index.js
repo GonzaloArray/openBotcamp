@@ -53,3 +53,24 @@ function* generaId() {
 const gen = generaId();
 
 console.log(gen.next()); /* Para obtener un valor se utiliza next() */
+
+// Ejercicio 1
+function devueltoTrue() {
+    return true;
+}
+
+// ejercicio 2
+const juna = new Promise((resolve, reject) => {
+
+    setTimeout(() => {
+        console.log("Hola soy una promesa")
+        return resolve();
+    }, 5000);
+
+})
+const meEjecutoAlInstate = () =>{
+    console.log("Me estoy ejecutando al Instate");
+}
+meEjecutoAlInstate();
+
+// Ejercicio 3
